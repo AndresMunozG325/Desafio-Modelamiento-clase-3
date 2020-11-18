@@ -12,7 +12,7 @@ CREATE TABLE cursos(
     id INT,
     nombre VARCHAR(255),
     alumno_id INT,
-    PRIMARY KEY(id) 
+    PRIMARY KEY(id), 
     FOREIGN KEY(alumno_id) REFERENCES alumnos(id)
 );
 
@@ -20,7 +20,7 @@ CREATE TABLE pruebas(
     id INT,
     puntaje INT,
     alumno_id INT,
-    PRIMARY KEY(id) 
+    PRIMARY KEY(id),
     FOREIGN KEY(alumno_id) REFERENCES alumnos(id)
 );
 
